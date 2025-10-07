@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor do fundo</title>
+</head>
+<body>
+    <h1>Mudando a cor do fundo</h1>
+    
+    <button onclick="mudarCor()">Verde</button>
+    <button onclick="mudarCor1()">Azul</button>
+    <button onclick="mudarCor2()">Vermelho</button>
+    <br><br>
+    <button onclick="aleatorio()">Cor Aleatoria</button>
+    <p id="aleatorio"></p>
+
+    <script>
+        function mudarCor() {
+            document.body.style.background = "green";            
+        }
+        function mudarCor1 (){
+            document.body.style.background = "blue";
+        }
+        function mudarCor2 (){
+            document.body.style.background = "red";
+        }
+        function aleatorio(){
+            //const alea =  Math.floor (Math.random()* 16);
+            //const cores = ["red","green","blue","yellow","gray","purple","black","white","magenta","orange","brown","cyan","lightblue","lightgreen","lightgray","lightbrown"];
+            //document.body.style.background = cores[alea];
+            const alea = Math.random().toString().substring(2,8)
+            document.body.style.background = "#" + alea
+        }
+
+    </script>
+</body>
+</html>
