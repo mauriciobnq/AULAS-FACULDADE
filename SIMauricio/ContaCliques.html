@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contador</title>
     <style>
         body{
             text-align: center;
@@ -31,32 +31,29 @@
     <script>
         let quantidade = 0;
         const botao = document.getElementById("btn_contador");
-        const botaozerar = document.getElementById("zerar_contador");
         const diminuir_contador = document.getElementById("diminuir_contador");
 
-        botao.addEventListener("click", function()
-    {quantidade++; 
-     document.getElementById("clickButton").innerText = "Cliques: " + quantidade;}
-    );
+            botao.addEventListener("click", function(){
+                quantidade++; 
+                document.getElementById("clickButton").innerText = "Cliques: " + quantidade;
+            }
+        );
     
-    
-        botaozerar.addEventListener("click", function()
-    {quantidade = 0 ; 
-     document.getElementById("clickButton").innerText = "Cliques: " + quantidade;}
-    );
+        const botaozerar = document.getElementById("zerar_contador");    
+        botaozerar.addEventListener("click", function(){
+                if (confirm("Deseja Zerar ?"));
+                    quantidade = 0 ; 
+                    document.getElementById("clickButton").innerText = "Cliques: " + quantidade;
+            }
+        );
     
 
-     diminuir_contador.addEventListener("click", function()
-    {quantidade--; 
-     document.getElementById("clickButton").innerText = "Cliques: " + quantidade;}
-    );
-
+        diminuir_contador.addEventListener("click", function(){
+                quantidade--; 
+                document.getElementById("clickButton").innerText = "Cliques: " + quantidade;
+            }
+        );
 
     </script>
-
-
-
-
-
 </body>
 </html>
