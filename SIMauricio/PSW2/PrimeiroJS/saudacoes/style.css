@@ -1,0 +1,55 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:beige;
+    display: flex;
+    justify-content:center;
+
+}
+
+main {
+    background-color:bisque;
+    margin-top: 10%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 5px 5px 20px;
+    border:1px black; 
+}
+
+h1{
+    color:rgb(255, 146, 3);
+    font-weight: 800;
+}
+
+p{
+    color: rgb(255, 146, 3);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.saudacao{
+    color: rgb(255, 146, 3);
+    font-size: 1.3em;
+}
+.saudacao p{
+    color: rgb(255, 146, 3);
+    font-size: 1.1em;
+    font-weight: 700;
+    font-style:italic;
+}
+
+button{
+    border-radius: 7px;
+    background-color:beige;
+    cursor:pointer;
+}
+button:hover{
+    background-color:rgb(214, 145, 55);
+    transition: 0.7s;
+}
+
+input{
+    border-radius: 7px;
+    background-color:beige;
+}
