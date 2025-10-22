@@ -1,0 +1,43 @@
+h1{
+    /* text-align: center; */
+}
+body{
+
+}
+
+table{
+    /* background-color: black;*/
+    width: 50%;
+   /* margin: auto;*/
+}
+
+th{
+    /* background-color: gray; */
+}
+
+td{
+    /* background-color: orange; */
+}
+
+th, td{
+    text-align: left;
+}
+
+tr{
+    background-color:bisque;
+}
+
+tr:nth-of-type(2n){
+    background-color: rgb(163, 162, 162);
+}
+@media (max-width:600px){
+    th{
+        display: none;
+    }
+    td{
+        display: none;
+    }
+    td::before{
+        content: attr(data-cel) ":";
+    }
+}
